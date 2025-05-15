@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,25 +8,42 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background: url('your-image.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
     }
     nav {
-      background: rgba(0, 0, 0, 0.9);
+      background: rgba(0, 0, 0, 0.7);
       padding: 1rem;
       text-align: center;
     }
     nav a {
       margin: 0 1rem;
-      color: white;
+      color: yellow;
       text-decoration: none;
       font-weight: bold;
     }
-    .container {
+    .section {
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 2rem;
+      margin: 2rem;
+      border-radius: 10px;
     }
     h1, h2 {
-      color: #4CAF50;
+      color: yellow;
+    }
+    ul {
+      list-style: square;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: yellow;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -35,13 +51,13 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="inside.html">Inside the Game</a>
-    <a href="community.html">Community</a>
   </nav>
-  <div class="container">
+
+  <div class="section">
     <h1>Inside the Game</h1>
-    <p>Welcome to the world of Grand Velora RP — a mobile roleplaying experience like no other. In this game, you'll take on real-world jobs, complete tasks, and rise through the ranks of society.</p>
-    
-    <h2>Gangs & Territories</h2>
+    <p>Explore the world of Grand Velora RP and what makes it unique.</p>
+
+    <h2>Gangs</h2>
     <ul>
       <li>Westside Cartel</li>
       <li>Eastside Cartel</li>
@@ -49,14 +65,16 @@
       <li>Red Serpents</li>
     </ul>
 
-    <h2>Systems & Features</h2>
-    <p>Experience realistic systems such as:</p>
+    <h2>Gameplay Features</h2>
     <ul>
-      <li>Player ID system</li>
-      <li>Admin ranks and zones</li>
-      <li>Driving & ID task tutorials</li>
-      <li>Multiplayer RP with live interactions</li>
+      <li>Create your custom character</li>
+      <li>Rent vehicles and explore the city</li>
+      <li>Earn money through jobs and missions</li>
+      <li>Complete starter tasks like the driving license</li>
+      <li>Join communities and make your mark</li>
     </ul>
+
+    <a class="btn" href="index.html">Back to Home</a>
   </div>
 </body>
 </html>
