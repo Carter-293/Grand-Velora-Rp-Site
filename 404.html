@@ -3,43 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Page Not Found - Grand Velora RP</title>
+  <title>404 - Grand Velora RP</title>
   <style>
-    body {
+    /* Reset default margins and paddings */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #000;
-      color: yellow;
-      font-family: Arial, sans-serif;
-      background-image: url('home-bg.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      box-sizing: border-box;
+    }
+
+    /* Body styling with animated gradient background */
+    body {
+      height: 100vh;
+      background: linear-gradient(-45deg, #FFD700, #000000, #FFD700, #000000);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
       text-align: center;
     }
-    .container {
-      padding: 15% 10%;
-      background-color: rgba(0, 0, 0, 0.7);
-      margin: 5% auto;
-      max-width: 600px;
-      border-radius: 15px;
+
+    /* Keyframes for background animation */
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
+
+    /* Container styling */
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+
+    /* Heading styling */
     h1 {
       font-size: 3em;
       margin-bottom: 20px;
+      color: #FFD700;
     }
+
+    /* Paragraph styling */
     p {
       font-size: 1.2em;
+      margin-bottom: 30px;
     }
+
+    /* Button styling */
     a {
       display: inline-block;
-      margin-top: 20px;
       padding: 12px 24px;
-      background-color: yellow;
-      color: black;
+      background-color: #FFD700;
+      color: #000;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #e6c200;
     }
   </style>
 </head>
@@ -50,4 +78,4 @@
     <a href="index.html">Return to Home</a>
   </div>
 </body>
-  </html>
+</html>
